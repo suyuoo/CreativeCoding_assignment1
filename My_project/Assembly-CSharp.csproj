@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}</ProjectGuid>
+    <ProjectGuid>{BA2CAE1C-71D8-A8AF-BC1A-D9DCB06CBC26}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,14 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\2.script\PlayerController.cs" />
-    <Compile Include="Assets\MapMagic\Compatibility\MegaSplat\MegaSplatOutput.cs" />
-    <Compile Include="Assets\MapMagic\Compatibility\RTP\RTPOutput.cs" />
-    <Compile Include="Assets\MapMagic\Compatibility\CTS\CTSOutput.cs" />
-    <Compile Include="Assets\PolygonPi\FenceLayout\FenceLayout.cs" />
-    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
-    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
     <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
+    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
+    <Compile Include="Assets\MapMagic\Compatibility\CTS\CTSOutput.cs" />
+    <Compile Include="Assets\MapMagic\Compatibility\MegaSplat\MegaSplatOutput.cs" />
+    <Compile Include="Assets\2.Script\PlayerController.cs" />
+    <Compile Include="Assets\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
+    <Compile Include="Assets\PolygonPi\FenceLayout\FenceLayout.cs" />
+    <Compile Include="Assets\MapMagic\Compatibility\RTP\RTPOutput.cs" />
+    <Compile Include="Assets\2.Script\FootStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TerrainSampleAssets\ThirdPartyNotices.txt" />
@@ -676,21 +677,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Den.Tools.Editor.csproj">
-      <Project>{AC43F128-1695-5A2B-D8A9-0F1F64F2A82F}</Project>
-      <Name>Den.Tools.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MapMagic.csproj">
-      <Project>{DC18DE23-8608-85B5-2063-C7471FAE1964}</Project>
-      <Name>MapMagic</Name>
-    </ProjectReference>
     <ProjectReference Include="Den.Tools.csproj">
-      <Project>{346B2CBF-D30A-FE07-E82E-AC86770F1111}</Project>
+      <Project>{E9C04E38-C601-1234-4A64-1B14A2DBF79F}</Project>
       <Name>Den.Tools</Name>
     </ProjectReference>
+    <ProjectReference Include="MapMagic.csproj">
+      <Project>{E46B158C-858D-1F9A-B125-197E2898AF8F}</Project>
+      <Name>MapMagic</Name>
+    </ProjectReference>
     <ProjectReference Include="MapMagic.Editor.csproj">
-      <Project>{FA8EBADC-EFFF-9AF9-BCDC-AD6E4DD1FCB0}</Project>
+      <Project>{6B67891F-FE58-C475-D0DF-2631AECECC49}</Project>
       <Name>MapMagic.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Den.Tools.Editor.csproj">
+      <Project>{6D6AED4A-5DE8-1072-EFE8-7FECFB8CC0A9}</Project>
+      <Name>Den.Tools.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
